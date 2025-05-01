@@ -22,3 +22,5 @@ Run the following commands to post-process:
 The VTK can be viewed in paraview.
 
 Note: A simple case of running the LES but not validated with experimental data. The spreading rate of even a simple jet can be challenging to simule using stand k-epsilon model of RANS.
+
+Hardward: Just a regular mini desktop - in this case the Apple Mac mini 2024 (Apple M4 chip with 10-core CPU, 10-core GPU)
