@@ -1,0 +1,47 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2406                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       volVectorField;
+    object      U;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+dimensions      [0 1 -1 0 0 0 0];
+
+internalField   uniform (0 0 0);
+
+boundaryField
+{
+    pipe
+    {
+        type            fixedValue;
+        value           uniform (0 0 0);
+    }
+    nozzle
+    {
+        type        turbulentDFSEMInlet;
+        delta       0.20;
+        R           uniform (0.05 0.01 0.01 0.03 0.01 0.01);
+        U           uniform (0 0 1);
+        L           uniform 0.01;
+        value       uniform (0 0 1);
+        nCellsPerEddy 3;
+        mapMethod   nearestCell;
+    }
+    ambient
+    {
+        type            zeroGradient;
+    }
+
+}
+
+
+// ************************************************************************* //
