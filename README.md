@@ -1,6 +1,5 @@
 LES simulation of a vertical 3D round jet (no buoyancy)
-[
-](https://www.youtube.com/watch?v=VN0vufcgQMM)
+(video: https://www.youtube.com/watch?v=VN0vufcgQMM)
 
 Geometry:
 1. Use either SketchUp (free version) or freeCAD to generate .stl
