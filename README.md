@@ -7,7 +7,7 @@ Geometry:
 3. Use Salome to import the .stl and group the surfaces into 'nozzle' and 'pipe' - this is necessary so that you can specify the boundary conditions at these patches separately in openFOAM
 4. Export the grouped surfaces from Salome as .stl (nozzle.stl and pipe.stl)
 5. snappyHexMesh can then be used for meshing (like in this example)
-6. Alternatively, you may also use salome to mesh (1D-2D-3D netgen), export as .unv, and run ideasUnvToFoam to generate the mesh (e.g. ideasUnvToFoam mesh.unv)
+6. Alternatively, you may also use salome to mesh (1D-2D-3D netgen), export as .unv, and run ideasUnvToFoam to generate the mesh (e.g. ideasUnvToFoam mesh.unv) - example shown in 3DJet_tetrahedron folder
 
 Run the following commands in sequence:
 1. blockMesh
